@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Ultimate Match</title>
+    <style>
+        
+        .title {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to bottom, #7a4b9f, #f7b7d0); 
+            padding: 20px 0;
+            font-size: 2.8em;
+            font-weight: bold;
+            color: #ffcc00; 
+            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.4); 
+            z-index: 1000;
+            text-align: center;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: black;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(90deg, #3d1a5e, #a87cb7);
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 120px auto 30px;
+            padding: 30px;
+            background: #f9c2d5;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #ff69b4;
+        }
+
+        .info-section {
+            text-align: left;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin-bottom: 25px;
+            font-size: 1.3em;
+        }
+
+        .buttons {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.4em;
+            border-radius: 30px;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+            transition: transform 0.2s ease-in-out, background 0.3s;
+        }
+
+        .yes {
+            background: #28a745;
+            color: white;
+        }
+
+        .yes:hover {
+            background: #218838;
+            transform: scale(1.1);
+        }
+
+        .no {
+            background: #ff6f6f; 
+            color: white;
+        }
+
+        .no::after {
+            content: ' 💔';
+        }
+
+        .no:hover {
+            background: #ff5c5c; 
+            transform: scale(1.1);
+        }
+
+        .custom-image {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .socials {
+            margin-top: 30px;
+        }
+
+        .socials img {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="title"> 🩷 Let’s Make Some Great Memories ❤️</div>
+    
+    <div class="container">
+        <img src="img69.png" alt="Profile Picture" class="profile-img">
+        
+        <div class="info-section">
+            <h3>A Little About Me ✨</h3>
+            <p>Hey, I'm 18 and always up for a good conversation. Whether it’s about tech, creativity, or the best coffee spots, I’m in!</p>
+            <p>I love coding, designing, and finding new ways to make life exciting. Also, I have a strong appreciation for bad puns and great playlists. 🎶</p>
+        </div>
+        
+        <div class="info-section">
+            <h3>What Makes Me Different? 💡</h3>
+            <p>- I keep conversations interesting—whether it’s deep topics or just sharing a laugh. 😄</p>
+            <p>- I enjoy spontaneous plans and finding cool places to explore. 🌍</p>
+            <p>- My music taste? Impeccable. And I take requests. 😉</p>
+        </div>
+
+        <div class="info-section">
+            <h3>Hobbies & Fun Facts 🎯</h3>
+            <p>- I design and develop websites, but I promise I don’t just talk about code. 😂</p>
+            <p>- Stargazing and late-night road trips are my idea of a perfect evening. 🌌</p>
+            <p>- I have a soft spot for dogs. They seem to approve of me too. 🐶</p>
+        </div>
+        
+        <img src="pickup.jpg" alt="My Image" class="custom-image">
+
+        <div class="buttons">
+            <button class="yes" onclick="alert('Awesome! Let’s Chat!')">Let's Chat!</button>
+            <button class="no" onclick="alert('Maybe next time! 😅')">Maybe Later</button>
+        </div>
+        
+        <div class="socials">
+            <a href="https://www.instagram.com/medhansh_.27?igsh=eGVzeXZ1ZzZ0ZDUy" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo"> @ medhansh_.27
+            </a>
+        </div>
+    </div>
+</body>
+</html>
